@@ -1,0 +1,13 @@
+h1{text-align: center;}
+.container{position: relative;width: 1200px;height: 800px;border: 5px solid orange;margin: auto;}
+.container div{margin: auto;width: 200px;height: 200px;line-height: 200;box-sizing: border-box;text-align: center;font-size: 48px;border-radius: 10%;}
+.container .relative{position: relative;border: 3px solid #000;}
+.container .abosolute{position: absolute;border: 3px solid #ddd;color: #ddd;z-index: -1;}
+.fir{left: 100px;}
+.sec{right: 100px;}
+.th{top: 100px;left: 200px;}
+.fo{bottom: 100px;right: 200px;}
+.fi{top: 0;left: 500px;}
+.si{top: 200px;left: 500px;}
+.se{top: 400px;left: 500px;}
+.ei{top: 600px;left: 500px;}

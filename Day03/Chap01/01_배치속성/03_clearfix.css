@@ -1,0 +1,23 @@
+.container{
+    position: relative;
+    width: 1024px;
+    min-height: 500px;
+    border: 5px dashed orange;
+    margin: auto;
+}
+.h1{text-align: center;}
+.item{
+    width: 300px;height: 200px;
+}
+.inner{display: block;
+    content: '';
+    clear: both;
+
+}
+.left{float: left;background-color: pink;}
+.right{float: right;background-color: lightblue;}
+.next{background-color: cornflowerblue;}
+
+.cler-left{clear: left;}
+.cler-right{clear: right;}
+.cler-both{clear: both;}
