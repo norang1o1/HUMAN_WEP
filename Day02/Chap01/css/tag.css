@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* TODO: 여기에 작성해보세요 */
+header{
+    height: 85px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+header h1{
+    float: left;
+    font-size: 1.8em;
+}
+
+header ul{
+    float: right;
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+}
+article{
+    min-height: 500px;
+    min-height: 500px;
+}
+article section{
+    float: left;
+    padding: 50px;
+}
+
+article aside{
+    float: right;
+    width: 200px;
+    background-color: #fedd31;
+    padding: 20px;
+    text-align: center;
+}
+footer{
+    height: 10px;
+    line-height: 10px;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+}
