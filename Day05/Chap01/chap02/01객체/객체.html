@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = {
+            name: '김',
+            age : 20,
+            print : function () {
+                return this.name + ' : ' + this.age
+            }
+        }
+        
+        document.write(a.name + ", ")
+        document.write(a.age +  ", "    )
+        document.write(a.print())
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        // 프로토 타입
+        function a(name,age){
+            this.name 
+            this.age}
+            let b = new a('?',20)
+
+        document.write(b.name)
+        document.write(`${b.name}`)
+        document.write(b.age)
+        document.write(`${b.[age]}`)
+        
+        delete b.age /* 값과 변수 삭제 */
+        document.write(`${b.[age]}`)    undefined
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ        
+        class c {
+            constructor(name, price){
+                this.name =name
+                this.price=price
+            }
+            showInfo(){
+                let r = `${this.name} : ${this.price}`
+                return r
+            }
+        }
+
+        class spcar extends c{
+            constructor(name,price,speed){
+            super(name,price)
+            this.speed = speed}
+        }
+        show({
+            let r = showInfo() + ' - ' + this.speed
+            return r
+        })
+        
+        let spcar = new SpCar('슈퍼카',30000,400)
+        document.write(spcar.show())
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

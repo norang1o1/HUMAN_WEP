@@ -1,0 +1,6 @@
+.btn{cursor: pointer; background-color: yellow;color: red;padding: 16px 24px;}
+.btn-arrow{border-left: 1px solid #ddd;}
+.dropdown{position: absolute;display: inline-block;}
+.dropdown-content{position: absolute;background-color: lightgray;min-width: 140px;display: none;}
+.dropdown-content a{display: block;padding: 12px 16px;text-decoration: none;color: #000;text-align: center;}
+.dropdown:hover.dropdown-content{display: block;}

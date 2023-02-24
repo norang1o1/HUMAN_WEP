@@ -1,0 +1,4 @@
+.a{text-decoration: none;display: inline-block;color: #000;}
+.btn{background-color: lightgray; padding: 8px 16px;font-size: 16px;}
+.btn:hover{background-color: #808080;color: #ddd;}
+.btn.round{border-radius: 50%;}

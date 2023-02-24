@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //body에 없으므로 HTML 접근불가
+        document.body.innerHTML = '<h1>Hello java</h1>'
+            //해결방안
+        document.addEventListener('DOMContentLoded',()=>{
+            //문서 로딩 후 실행
+            document.getElementById('title').innerHTML='문서 준비 완료'
+        })
+    </script>
+</head>
+<body>
+    <h1 id="title"></h1>
+
+
+
+
+
+
+<!--  body 내의 스크립트 위치 -->
+    <script>
+        document.body.innerHTML = '<h1>Hello java</h1>'
+    </script>   
+</body>
+</html>

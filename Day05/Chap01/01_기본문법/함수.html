@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const 익명함수 = function name() {
+            console.log('a')
+        }
+        function 선언적함수() {
+            console.log('b')
+            
+        }
+        
+        //함수 호출
+        익명함수()
+        선언적함수()
+        //출력
+        console.log(typeof 익명함수)
+        console.log(익명함수)
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        function sum(arr) {
+            let sum = 0
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            } return sum
+        }
+        function avg(arr) {
+            let avg = 0.0
+            avg = sum(arr) / arr.length
+            return avg
+        }
+        let arr = [1,2,3,4,5]
+        document.write(`${avg(arr).toFixed(2)}`)
+        ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        매개연산자
+
+        function sample(a, b, ...items) {
+            console.log(items)
+            document.write(`a: ${a}, `)
+            document.write(`b: ${b}, `)
+            for (let i = 0; i < items.length; i++) {
+                console.log(items[i])
+                console.write(items[i])
+            }
+            document.write('<br>')
+        }
+
+        나머지 매개변수 (...items)
+        인자를 가변적으로 전달 가능
+        
+    sample(1,2,3,4,5)        
+    sample(1,2,3,4,5,6,7)
+    sample(1,2,3,4,5,6,7,8,9)
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        전개연산자 
+
+        function name(a,b,...items) {
+            document.write(`${a}<br>`)
+            document.write(`${b}<br>`)
+            document.write(`${items[3]}<br>`)
+            document.write(`${items[4]}<br>`)
+        }
+
+        const arra = [1,2,3,4]
+        name(...arra)
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+        기본 매개변수 : 인자가 전달되지 않았을 때, 기본값을 지정하는 매개변수
+
+        function pay(name, pay=9620, hours=48) {
+            document.write(`${name}<br>`)
+            document.write(`${pay}<br>`)
+            document.write(`${hours}<br>`)
+            document.write(`${pay*hours*4}<br>`)
+            document.write(`<br>`)
+        }
+        pay('알바생')
+        pay('알바생',6200,65)
+        pay('알바생',15000,80)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

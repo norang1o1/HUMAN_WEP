@@ -9,4 +9,4 @@
     height: 330px;
 }
 img.left{float: left;}
-img.right{float: right;}
+img.right{float: inline-start;}

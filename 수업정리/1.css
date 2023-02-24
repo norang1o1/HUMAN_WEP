@@ -1,0 +1,16 @@
+
+header{text-align: center;background-color: yellow; font-size: 50px;}
+.container{
+    position: relative;
+    width: auto;
+    border: 5px solid rgb(4, 0, 255);
+    background-color: aqua;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-style: italic;
+    font-weight:bold;
+
+}

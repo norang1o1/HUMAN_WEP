@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //print 처럼 전달인자로 전달되는 함수 : 콜백함수
+        function callThreetimes(callback) {
+            for (let i = 0; i < 3; i++) {callback(i)}}
+        function print(i) {console.log(`${i}번째 함수`)}
+        callThreetimes(print)
+ ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ       
+        
+ callThreetimes(function(i){console.log(`${i}`)}) /* 익명콜백 */
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ       
+        a.array.forEach(function (value, index, arry) {
+            document.write(`${index+1} : ${value}<br>`)
+            console.log(`${index+1} : ${value}`)
+        }) console.log(`${a}`)                           /* forEach 콜백 */
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        //타이머  setTimeout :지정시간 후에 콜백함수 :   ()=>{}  !호출
+        let t1 = setTimeout(() => {
+           console.log(`3초경과`) 
+        }, 3000);
+        
+        let count =1 
+        let t2 = setInterval(() => {
+            console.log(`${count} 초`) 
+        }, 1000);
+
+        setInterval(() => {
+            let t = new Date()
+            let h = t.getHours()
+            let m = t.getMinutes()
+            let s = t.getSeconds()
+            let time = `${h} : ${m} : ${s}`
+
+            console.log(time)
+            document.getElementById('time').innerHTML = time
+        }, 1000);
+
+        //타이머 제거
+
+        clearTimeout(t1)
+        clearInterval(t2)
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        // 즉시 호출 : 외부 스크립트를 내부로 가져오는 함수 -쉐도잉(일회용)
+        (function name(params) {
+            xxxxxxxxxx
+        }) ()
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        //엄격모드 : 타입선언 필요
+        'use strict'(선언식은 최상단으로)
+        daya= 10  -> 에러 발생  
+        console.log(data)
+
+
+    </script>
+</head>
+<body>
+    <h1 id="time"></h1>
+</body>
+</html>

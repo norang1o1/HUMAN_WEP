@@ -1,0 +1,14 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+header{width: 100%;background-color: #000;position: fixed;top: 0;overflow: hidden;}
+.navbar{}
+.navbar a {float: left;display: block;color: #ddd;text-decoration: none;padding: 12px 16px;font-size: 18px;}
+.navbar a:hover{background-color: royalblue;}
+.navbar a.active{background-color: seagreen;}
+.navbar .icon{float: right;display: none;}
+@media screen and (max-width:600px) {
+    .navbar a:not(:first-child, .icon)
+    {display: none;}
+    .navbar .icon{display: block;}
+    .navbar.mobile a:not(:first-child){float: none;display: block;clear: both;}
+    .navbar.mobile .icon{position: absolute;right: 0;top: 0;}
+}

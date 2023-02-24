@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 자바 스크립트 코드는 스크립트 태그 안에 작성 -->
+    <title>변수</title>
+    <script>
+        // var : 2015까지의 변수
+        // let : 2015이후의 자바스크립트 변수
+        // const : 상수
+        //  자바스크립트에서는 ;생략
+        var a =10
+       var sum = 2 + a
+        var a =200 
+
+        let a =10
+        let sum = 4 + a
+        // let a =10
+        console.log('sum:'+sum)
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        const 출력메시지=promt('메시지','기본값')        
+        alert(출력메시지)  /* 경고창 */
+
+        const 메시지 = confirm('체크내용')
+        confirm('메시지')   /* 체크, 확인 시 true */
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        // 템플릿 문자열
+        const rate = 1304
+
+        let dollar=prompt('환산할 달러 입력')
+        let won = dollar*rate
+        alert(`${dollar} 달러는 ${won} 원 입니다`)   /* esc 밑에 */
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ        
+        //스크립트 주요 자료형
+        console.log(typeof 'easy')
+        console.log(typeof 10.45)
+        console.log(typeof true)
+        console.log(typeof null)
+        console.log(typeof undefined) 
+        // 함수도 자료형으로 인식
+        console.log(typeof function(){}) 
+        console.log(typeof new Date()) 
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+        // 자료형 반환
+        let a = '10'
+        let ten = Number(a)
+        let ab = a + ten + 20
+        console.log('ab: ' + ab)
+        let aFive = String(5) //5라는 문자 추가
+        let aTrun = 'true'
+        let boolFalse = !Boolean(aTrun)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

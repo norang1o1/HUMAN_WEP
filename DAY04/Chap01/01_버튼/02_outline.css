@@ -1,0 +1,17 @@
+.btn{border: 2px solid #000; background-color: #fff; color: #000; padding: 14px 28px; font-size: 18px;cursor: pointer;}
+.a{border-color: #04aa6d; color: green;}
+.a:hover{background-color: #04aa6d;color: #ddd;}
+
+.b{border-color: #2196f3;color: dodgerblue;}
+.b:hover{border-color: #2196f3;color: #ddd;}
+
+.c{border-color: #ce9121;color: rgb(209, 146, 29);}
+.c:hover{border-color: #ce9121;color: #ddd;}
+
+.d{border-color: #e6515d;color: #e6515d;}
+.d:hover{border-color: #d41e1e;color: #ddd;}
+
+.e{border-color: #ddd;color: #000;}
+.e:hover{border-color: #ddd;}
+
+
