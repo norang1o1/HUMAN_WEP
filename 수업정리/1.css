@@ -1,16 +1,21 @@
 
-header{text-align: center;background-color: yellow; font-size: 50px;}
 .container{
-    position: relative;
-    width: auto;
-    border: 5px solid rgb(4, 0, 255);
-    background-color: aqua;
-    padding: 20px;
-    width: 500px;
-    text-align: center;
-    margin: auto;
-    font-size: 20px;
-    font-style: italic;
-    font-weight:bold;
+    position: ;
+
+    상대적, 절대적, 고정적, 유동적
+
+    display: ;  
+    유연, 고정, 애니메이션, 배열, 블록, 표, 인라인
+    content: ;
+    콘텐츠 내의 필요한 항목 : 가로 세로 경계 두께 여백 색 위치 
+  
+    inline 요소 ;                           < = >  block 요소
+    img br a span input button label              html head body header div table 
+
+
+    touch-action: ;
+    마우스 : 휠(up-down) 클릭(on-off) 드래그?
+    키보드?
+   
 
 }

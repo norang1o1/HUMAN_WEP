@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write('<h1>요소생성</h1>')
+            const h3 = document.createElement('h3')
+            h3.innerText = '카페이름 작성'
+            document.body.appendChild(h3)
+
+        document.addEventListener('DOMContentLoaded',()=>{
+            const ul =document.getElementById('list')
+            const li = document.createElement('li')
+            const text = document.createTextNode('입력리스트')
+            const textStyle = document.createAttribute('style')
+            textStyle.value = 'color: brown'
+            
+            li.setAttributeNode(textStyle)
+        
+            li.appendChild(text)
+            li.append('입니다')
+            ul.appendChild(li)
+
+            const bthCreate = document.getElementById('create')
+            const bthRemove = document.getElementById('remove')
+
+            bthCreate.addEventListener('click', addList)
+            bthRemove.addEventListener('click', removeList)
+            input.addEventListener('keyup', enter)
+        })
+        function addList(){
+            const ul = document.getElementById('list')
+            const li = document.createElement('li')
+            const input = document.getElementById('input')
+            const text = document.createTextNode(input.value)
+
+            li.appendChild(text)
+            ul.appendChild(li)
+            input.value = ''
+        }
+        function removeList(){
+            const ul = document.querySelector('#list')
+            const lists = document.querySelectorAll('#list li')
+
+            ul.removeChild(lists[0])
+        }
+        function enter(event) {
+            if ( event.KeyCode == 13) {
+                addList
+            }
+        }
+    </script>
+</head>
+<body>
+    <hr>
+    <ul id="list"></ul>
+
+    <input type="text" name="input" id="input" placeholder="카페이름">
+    <button id="create">추가</button>
+    <button id="remove">삭제</button>
+</body>
+</html>
